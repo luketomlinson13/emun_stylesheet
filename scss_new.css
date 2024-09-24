@@ -1,0 +1,114 @@
+.sidebar-link-wrapper {
+    width: 20vw;
+    display: block;
+    background: #f4f4f4;
+    box-sizing: border-box;
+    padding: 1rem 2rem; 
+  }  
+
+.link-title {
+    border-bottom: solid 1px #4c4c4c;
+    display: inline-block;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 7px 0;
+    margin-bottom: 7px;
+}
+
+.sidebar-link {
+    display: block;
+    color: #666;
+    height: 30px;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.sidebar-link .icon-arrow-right {
+    display: none
+}
+
+.sidebar-link.active .icon-arrow-right {
+    display: inline-block
+}
+
+.sidebar-link.active, .sidebar-link:hover {
+    font-weight: 600
+}
+
+.gap-lg {
+    height: 2rem;
+}
+
+.icon-arrow-right:after {
+    content: ' ';
+    display: inline-block;
+    position: relative;
+    top: 0;
+    right: 0;
+    width: 10px;
+    height: 10px;
+    border-top: solid 1px #000;
+    border-right: solid 1px #000;
+    transform: rotate(45deg)
+}
+
+.order-panel .panel-title {
+	margin: 0;
+	padding: 0;
+	background-color: #e0d9d1;
+	font-size: 24px;
+	font-weight: 600;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 80px;
+	text-transform: uppercase;
+	white-space: normal;
+}
+
+.order-panel .panel-body {
+	padding-top: 50px;
+	text-align: center;
+	justify-content: center;
+	font-size: 18px;
+	line-height: 21px;
+}
+
+
+.order-panel .panel-primary {
+	letter-spacing: normal;
+	width: 30vw;
+	max-width: 518px;
+	height: 674px;
+	border: 1px solid #e0d9d1;
+	position: relative;
+	box-sizing: border-box;
+	background-color: #f5f5f5;
+	display: inline-block;
+	vertical-align: top;
+	margin: .5rem;
+	color: #252525;
+}
+
+
+.shipping 
+{
+    .title-1 {
+      font-family: "Playfair Display", serif;
+      font-weight: 700;
+      font-size: 1rem !important;
+    }
+  
+    .title-2 {
+      font-family: "Playfair Display", serif;
+      font-weight: 700;
+      font-size: 2rem !important;
+    }
+  
+    h4 {
+        font-size: 1rem !important;
+        text-transform: uppercase !important;
+        display: block !important;
+        font-weight: 600;
+    }
+}
