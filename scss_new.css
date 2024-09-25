@@ -353,22 +353,56 @@
     height: 100%;
     width: 100%;
     display: flex;
-    gap: 1.5rem;
     justify-content: space-between;
-    padding: 0 5rem;
+    padding: 0 3rem;
 
     & a {
         align-items: center;
-        border-bottom: 2px solid transparent;
         display: flex;
-        gap: 0.75rem;
         font-weight: 500;
         height: 100%;
         text-transform: uppercase;
         font-size: 1.25rem;
+        color: #252525;
 
         & svg {
             display: none;
         }
     }
+}
+
+.top-nav {
+    border-bottom: 0;
+    display: flex;
+	align-items: center;
+	margin: 1.5rem;
+
+  .top {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+        & a {	
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 3.5rem;
+            letter-spacing: 0.5rem;
+            color: #252525; 
+			
+        }
+	}
+
+	 .emun-nav {
+    margin-left: auto;
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+  }
+}
+
+.breadcrumb-trail ol {
+    border-bottom: 0;
+    padding-bottom: 0;
+}
+
+main {
+    margin-top: 0;
 }
