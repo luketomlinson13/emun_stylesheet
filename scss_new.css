@@ -473,3 +473,31 @@ footer {
 main {
     margin-top: 0.5rem;
 }
+
+.quote {
+	padding-top: 168px;
+    padding-bottom: 140px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.quote h2 {
+	font-weight: 300;
+	line-height: 1.1;
+}
+
+.quote .text {
+	font-family: "Playfair Display", sans-serif;
+	font-size: 27px;
+	color: #1b1b1b;
+	margin: 0;
+	margin-bottom: 1em;
+}
+
+.pn-stevenshell {
+  .grid-section > div + div {
+  	margin-top: 0em;
+	}
+}
