@@ -289,7 +289,6 @@
         font-size: 2rem;
         line-height: 1.5rem;
         letter-spacing: .05em;
-        margin-bottom: 1.875rem;
         font-weight: 600;
         color: #252525;
         text-align: center;
@@ -301,21 +300,11 @@
         font-size: 1.5rem;
         line-height: 1.175rem;
         margin-top: 2rem;
-        color: #252525
     }
 
     .subtitle {
         font-size: 0.875rem;
         line-height: 1.2rem;
-        color: #252525
-    }
-
-    .carousel-indicators {
-        display: none;
-    }
-
-    .btn-primary {
-        background-color: #252525;
     }
 }
 
@@ -390,79 +379,7 @@
     }
 }
 
-.navbar .navbar-nav {
-    height: 100%;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    padding: 0 3rem;
 
-    & a {
-        align-items: center;
-        display: flex;
-        font-weight: 500;
-        height: 100%;
-        text-transform: uppercase;
-        font-size: 1.25rem;
-        color: #252525;
-
-        & svg {
-            display: none;
-        }
-    }
-}
-
-.top-nav {
-    border-bottom: 0;
-    display: flex;
-	align-items: center;
-	margin: 1.5rem;
-
-  .top {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-        & a {	
-            font-family: 'Times New Roman', Times, serif;
-            font-size: 3.5rem;
-            letter-spacing: 0.5rem;
-            color: #252525; 
-			
-        }
-	}
-
-	.emun-nav {
-        margin-left: auto;
-        list-style: none;
-        display: flex;
-        gap: 1rem;
-  }
-}
-
-footer {
-    background-color: #252525;
-    color: #fff;
-    display: flex;
-	
-    .quick-links {
-        & .panel {
-            background-color: #252525;
-			
-			& h2 {
-				color: #fff;
-				font-weight: 600;
-			}
-
-			& a {
-				padding: 0.1rem;
-			}
-
-			& .ng-scope {
-				line-height: normal;
-			}
-        }
-    }
-}
 
 
 .breadcrumb-trail ol {
@@ -496,8 +413,127 @@ main {
 	margin-bottom: 1em;
 }
 
-.pn-stevenshell {
-  .grid-section > div + div {
-  	margin-top: 0em;
+.half-side-walking-path {
+	max-width: 100%;
+    margin: 0 auto;
+    padding: 160px 0;
+	
+	.paragraph {
+		padding-right: 70px;
+		flex-basis: 0;
+        flex-grow: 1;
+        flex-shrink: 1;
+		margin: 0;
+        padding: 0;
+        padding-bottom: 1em;
+        font-size: 16px;
+        line-height: 1.38em;
+        letter-spacing: .87px;
+        max-width: 380px;
+        margin-left: auto;
+        margin-right: 20px;
 	}
+}
+
+.half-side-image {
+    border-left: solid 1px #c7c7c7;
+    padding-left: 69px;
+    font-size: 0
+}
+
+@media (min-width: 768px) {
+	.half-side-image {
+		border-left: solid 1px #c7c7c7;
+		padding-left: 69px;
+		font-size: 0;
+	}
+}
+@media screen and (min-width: 768px) and (max-width:1120px) {
+    .pn-stevenshell .half-side-image {
+        border-left:0;
+        padding-left: 0
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .pn-stevenshell .half-side-image {
+        order:0;
+        padding: 0 8vw
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .half-side-walking-path .paragraph {
+        order:1;
+        padding: 0 8vw
+    }
+}
+
+.walking {
+	text-align: right;
+	border-bottom: solid 2px #ba8e00;
+	font-size: 0;
+	margin-top: 94px;
+	margin-right: 20px;
+	margin-bottom: 0;
+	margin-left: 0;
+	position: relative;
+	left: -100px;
+	
+	img#man-bend {
+        width: auto;
+        height: 62px;
+        display: inline;
+    }
+	
+	img#man-straightedge {
+		width: auto;
+		height: 62px;
+		display: inline;
+    }
+	
+	.fromcenter {
+		margin-left: 20px;
+        margin-right: auto;
+        text-align: left;
+        left: auto;
+        right: -100px;
+	}
+	
+}
+	
+.pn-stevenshell {
+	.padding-standard {
+		padding: 5em 0em;
+	}
+	
+	.single-after-hat {
+    	padding-top: 100px;
+    	padding-bottom: 26px;
+		text-align: center;
+		max-width: 740px;
+		margin: 0 auto;
+		
+		p {
+		    text-align: left;
+			line-height: 1.38em;
+			letter-spacing: .87px;
+			margin-bottom: 1em;	
+		}
+	}
+}
+
+.showroom-tell {
+	max-width: 580px;
+	padding-top: 80px;
+	padding-bottom: 60px;
+}
+	
+@media screen and (min-width: 768px) .showroom-tell {
+	width: 100%;
+	padding: 40px 30px;
+	margin: 0 auto;
+	max-width: 100vw;
+	box-sizing: border-box;
+	padding-bottom: 24px;
 }
