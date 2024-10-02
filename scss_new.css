@@ -521,13 +521,13 @@ main {
 }
 
 .showroom-description {
-	padding: 20px;
+	padding: 1.2rem;
 }
 	
-@media screen and (min-width: 768px) { 
+@media screen and (min-width: 800px) { 
     .showroom-description {
         width: 50%;
-        padding: 40px 0px;
+        padding: 2.5rem 0;
         margin: 0 auto;
     }
 }
@@ -537,8 +537,44 @@ main {
     flex-wrap: wrap;
     justify-content: center;
     gap: 3rem;
+
+    .showroom-item-no-href {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        background-color: #f6f6f6;
+        padding: 2rem;
+        gap: 2rem;
+        
+        @media (max-width: 900px) {
+            flex-direction: column;
+        }
+
+        .no-button-image {
+            width: 50%;
+
+            @media (max-width: 900px) {
+                width: 100%;
+            }
+        }
+
+        .showroom-text {
+            text-align: left;
+            align-self: center;
+        }
+
+        .logo {
+            height: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .name {
+            font-size: 1rem;
+            padding: 0;
+        }
+    }
   
-    .showroom-item {
+    .showroom-item-has-href {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -551,7 +587,7 @@ main {
     
     }
 
-    .image-button {
+    .button-image {
 		display: flex;
 		flex-direction: column-reverse;
 		gap: 1rem;
@@ -612,6 +648,29 @@ main {
     }
 }
 
+.pn-atlanta, .pn-highpoint {
+    text-align: center;
+
+    h1 {
+        font-size: 4rem;
+        font-weight: 700;
+        margin: 3rem auto;
+    }
+
+    h4 {
+        font-size: 1.2rem;
+        font-weight: 700;
+        color: black;
+        text-transform: uppercase;
+        margin-top: 2rem;
+    }
+
+    p {
+       max-width: 40rem;
+       margin: 2rem auto; 
+    }
+}
+
 .hero-with-text-container {
     position: relative;
     width: 100%;
@@ -654,4 +713,56 @@ main {
       }
     }
   }
+
+.contact-us-card {
+	text-align: center;
+	display: inline-block;
+    padding: 2em;
+	vertical-align: top;
+	background: #fff;
+	padding-top: 2.8em;
+	box-shadow: 0px 1px 6px 0px #606060;
+	margin: 0 1.9em;
+	color: #4c4c4c;
+	.card-title {
+		font-size: 1.1em;
+		font-weight: 700;
+		padding-top: 5vw;
+		padding-bottom: 0.6em;
+		background-repeat: no-repeat;
+		background-position-x: center;
+		background-position-y: 0;
+		background-size: 7vw auto;
+	}
+    .card-text {
+		margin: 0;
+		font-size: 14px;
+		color: #4c4c4c;
+	}
+}
   
+
+.pn-contact {
+    .card-wrapper {
+        margin-top: -8.5em !important;
+    }
+	
+	#contact-us-description-1 {
+		font-family: 'Open Sans Semibold','Open Sans',sans-serif;
+		font-size: 2.0rem;
+		letter-spacing: -1px;
+		text-transform: uppercase;
+		padding-top: 3rem;
+		padding-bottom: 3rem;
+		margin-top: 3.2rem;
+	}
+	
+	#contact-us-description-2 {
+		font-family: 'Open Sans',sans-serif;
+		font-size: 1.4rem;
+		text-transform: None;
+		padding-bottom: 5rem;
+		max-width: 64rem;
+		margin: 0 auto;
+	}
+}
