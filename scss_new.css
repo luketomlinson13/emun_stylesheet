@@ -236,6 +236,18 @@
         margin-top: 3rem;
         margin-bottom: 1rem;
     }
+
+    .hero-with-text-container {
+
+        .text-overlay h1 {
+            font-size: 3rem;
+            max-width: 40rem;
+            padding-bottom: 2.5rem;
+            margin: auto;
+        }
+    }
+
+   
 }
 
 .how-to-order {
