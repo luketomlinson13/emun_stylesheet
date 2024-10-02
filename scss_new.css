@@ -520,19 +520,94 @@ main {
 	}
 }
 
-.showroom-tell {
-	max-width: 580px;
-	padding-top: 80px;
-	padding-bottom: 60px;
+.showroom-description {
+	padding: 20px;
 }
 	
 @media screen and (min-width: 768px) { 
-    .showroom-tell {
-        width: 100%;
-        padding: 40px 30px;
+    .showroom-description {
+        width: 50%;
+        padding: 40px 0px;
         margin: 0 auto;
-        max-width: 100vw;
-        box-sizing: border-box;
-        padding-bottom: 24px;
+    }
+}
+
+.showrooms-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3rem;
+  
+    .showroom-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 46%;
+        margin: 1rem 0;
+
+		@media (max-width: 800px) {
+        max-width: 100%;
+    }
+    
+    }
+
+    .image-button {
+		display: flex;
+		flex-direction: column-reverse;
+		gap: 1rem;
+        width: 100%;
+        transition: transform 0.3s ease;
+		text-align: center;
+        margin-bottom: 1rem;
+        
+        &:hover {
+        transform: scale(1.05);
+        }
+    }
+    
+    .logo {
+        height: 5rem;
+        margin: 0 auto;
+    }
+    
+    .main-image {
+        width: 100%;
+        height: auto;
+    }
+    
+    .showroom-text {
+        text-align: center;
+    }
+    
+    .name {
+        padding: 1rem 0;
+        font-size: 1.5rem;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+    
+    .where, .when {
+        font-size: 1rem;
+        margin: 0;
+    }
+    
+    .showroom-buttons {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        padding-top: 2rem;
+    
+        a {
+        background-color: lightgray;
+        padding: 1rem 1.5rem;
+        color: black;
+        text-decoration: none;
+        border-radius: 0.25rem;
+        transition: background-color 0.3s ease;
+    
+        &:hover {
+            background-color: darkgray;
+        }
+        }
     }
 }
