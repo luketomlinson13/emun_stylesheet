@@ -1,5 +1,5 @@
 .sidebar-link-wrapper {
-    width: 20vw;
+    width: 100%;
     display: block;
     background: #f4f4f4;
     box-sizing: border-box;
@@ -782,4 +782,96 @@ main {
 		max-width: 64rem;
 		margin: 0 auto;
 	}
+}
+
+.image-slider-container {
+    width: 90%;
+	margin: auto;
+    padding: 1rem 0;
+    
+    .image-slider-wrapper {
+        display: flex;
+        align-items: center;
+        position: relative;
+        max-width: 100%;
+        overflow: hidden;
+        padding: 0rem 2.5rem;
+
+        .image-slider {
+            overflow: hidden;
+            flex: 1;
+            position: relative;
+
+            &:before,
+            &:after {
+                content: "";
+                position: absolute;
+                top: 0;
+                width: 50px;
+                height: 100%;
+                z-index: 1;
+            }
+
+            &:before {
+                left: 0;
+                background: linear-gradient(to right, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+            }
+
+            &:after {
+                right: 0;
+                background: linear-gradient(to left, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+            }
+        }
+
+        .image-slider-track {
+            display: flex;
+            transition: transform 0.75s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+            will-change: transform;
+        }
+
+        .slider-item {
+            flex: 0 0 auto;
+            transition: transform 0.3s ease;
+            position: relative;
+            height: 20rem;
+            padding: 0.25rem;
+            z-index: 2;
+        }
+
+        .slider-image {
+            height: 100%;
+            width: auto;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .slider-button {
+            color: #2e2e2e;
+            font-size: 2rem;
+            border: none;
+            cursor: pointer;
+            position: absolute;
+            z-index: 10;
+
+            &.left {
+                left: 0;
+            }
+
+            &.right {
+                right: 0;
+            }
+
+            &:hover {
+                color: darkgray
+            }
+        } 
+    }
+
+    .image-slider-label {
+        font-size: 1.2rem;
+        color: rgb(171, 167, 167);
+        font-weight: 500;
+        text-transform: uppercase;
+        text-align: center;
+    }
+
 }
